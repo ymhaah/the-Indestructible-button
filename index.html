@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Yousef Hafnawi" />
+		<meta
+			name="description"
+			content="how to make an Indestructible button
+			that work with flex Without any strange positioning issues,
+			and work with grid without any change in size,
+			behaves as you expect it to behave,
+			It stays where you put it in the size you specified,
+			Smoothly interacts with the screen size,
+			surrounding elements, and the font size used"
+		/>
+		<title>the Indestructible button</title>
+		<link rel="icon" type="image/png" href="./my-logo.png" />
+		<link rel="stylesheet" href="./index.css" />
+	</head>
+	<body>
+		<!-- 
+			Important notes:
+				- with a <button></button> use [ type="button" ] 
+				- with a <a></a> use [ role="button" ]
+				- the main class which gives properties is { Button }
+		-->
+		<main>
+			<div class="Container">
+				<section class="flex-container" aria-labelledby="flex-heading">
+					<h1 id="flex-heading">Flex container</h1>
+					<div>
+						<button type="button" class="Button">
+							normal button
+						</button>
+						<a href="#" role="button" class="Button"
+							>a link button</a
+						>
+					</div>
+					<div>
+						<button type="button" class="Button">
+							normal button
+						</button>
+						<a href="#" role="button" class="Button"
+							>a link button</a
+						>
+					</div>
+				</section>
+				<section class="grid-container" aria-labelledby="grid-heading">
+					<h1 id="grid-heading">Grid container</h1>
+					<div>
+						<button type="button" class="Button">
+							normal button
+						</button>
+						<a href="#" role="button" class="Button"
+							>a link button</a
+						>
+					</div>
+					<div>
+						<button type="button" class="Button">
+							normal button
+						</button>
+						<a href="#" role="button" class="Button"
+							>a link button</a
+						>
+					</div>
+				</section>
+			</div>
+		</main>
+	</body>
+</html>

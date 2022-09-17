@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* 
+	Important notes:
+		- main font is ( Roboto 400 )
+*/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+body {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	font-family: "Roboto", sans-serif;
+}
+html,
+html:focus-within {
+	scroll-behavior: smooth;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+main {
+	width: 100vw;
+}
+.Container {
+	height: 100%;
+	width: 90%;
+	margin-inline: auto;
+}
+section {
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+}
+section div {
+	width: 100%;
+	margin-bottom: 1rem;
+}
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.grid-container {
+	display: grid;
+	place-content: center;
+	grid-template-rows: repeat(2, auto);
+	grid-template-columns: repeat(1, 100%);
+}
+a,
+button {
+	font: inherit;
+}
+.Button {
+	max-height: 3em;
+	min-height: 3.25rem;
+	width: min-content;
+	max-width: min(100%, 90vw);
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;
+	appearance: button;
+	user-select: none;
+	text-transform: capitalize;
+	white-space: nowrap;
+	text-decoration: none;
+	cursor: pointer;
+	padding: max(0.5em, 0.5rem) max(1.5em, 1.5rem);
+	font-size: clamp(0.875rem, 0.7220363289rem + 0.7648183556vw, 1.375rem);
+	font-weight: 400;
+	background-color: hsl(216, 98%, 52%);
+	color: hsl(0, 0%, 100%);
+	border: 2px solid hsl(216, 98%, 52%);
+	border-radius: 8px;
+	box-shadow: 0 0 0 -0.4em hsl(0, 0%, 100%),
+		0 0 0 -0.6em rgba(13, 109, 253, 0.7);
+	transition: box-shadow 400ms cubic-bezier(0.66, -0.2, 0.27, 1.15);
+}
+.Button:not(:last-child) {
+	margin: 0 1rem 0 0;
+}
+.Button:active,
+.Button:hover {
+	opacity: 0.7;
+}
+.Button:focus-visible {
+	box-shadow: 0 0 0 0.3em hsl(0, 0%, 100%),
+		0 0 0 0.5em rgba(13, 109, 253, 0.7);
+}
+.Button:focus {
+	outline: none;
+}
+@media screen and (max-width: 48em) {
+	.Button {
+		width: 100%;
+	}
+	.Button:not(:last-child) {
+		margin: 0 0 1rem 0;
+	}
+}
