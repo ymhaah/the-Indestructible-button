@@ -1,6 +1,10 @@
 # the-Indestructible-button
-an Indestructible button that work with flex Without any strange positioning issues, and work with grid without any change in size, behaves as you expect it to behave, It stays where you put it in the size you specified, Smoothly interacts with the screen size, surrounding elements, and the font size used
 
-   ![buttons](https://user-images.githubusercontent.com/77534098/190860525-5eb7059f-e438-41ce-98d2-1bca83ede54e.jpeg)
+### Read it on:
+- [dev.to](https://dev.to/hefnawy/the-button-that-every-front-end-developer-should-use-the-written-once-and-forgotten-code-2olp)
+- [medium](https://medium.com/@Youssef_Hefnawy/the-button-that-every-front-end-developer-should-use-the-written-once-and-forgotten-code-026d7545bd33)
 
- ## [live demo](https://ymhaah.github.io/the-Indestructible-button/)
+### Article Description
+[live demo](https://ymhaah.github.io/the-Indestructible-button/)
+
+a button that works with flex Without any strange positioning issues, and works with grid without any change in size, behaves as you expect it to behave, stays where you put it in the size you specified, Smoothly interacts with the screen size, surrounding elements, and the font size used.
